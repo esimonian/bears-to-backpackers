@@ -3,6 +3,8 @@
 Browser extension that reveals the *real* truth behind Millennials.
 
 
+
+
 ## Installation
 
 1. Add the extension to your browser of choice: 
@@ -31,13 +33,5 @@ Big thanks to [samford](https://github.com/samford) and [vandahm](https://github
 
 ### BuzzFeed
 [![BuzzFeed](https://i.imgur.com/PT1NWX5.png)](http://www.buzzfeed.com/sapna/what-public-companies-are-telling-wall-street-about-millenni)
-
-### Installed Extensions
-#### Chrome
-![](https://i.imgur.com/xAzfhw8.png)
-
-#### Firefox
-![](http://i.imgur.com/ro9zkDl.png)
-
-#### Safari
-![](https://camo.githubusercontent.com/e244891000642e281c202b4fbd07b14fcf2bf4d7/687474703a2f2f61322e642e70722f477757712e706e67)
+###Icons
+<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>

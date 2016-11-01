@@ -34,10 +34,14 @@ function replaceText(v)
     //Grizzliessss
     v = v.replace(/\b(?:Grizzly)\b/g, "Dirty Backpacker");
     v = v.replace(/\b(?:Grizzlies)\b/g, "Dirty Backpackers");
+    v = v.replace(/\b(?:GRIZZLY)\b/g, "DIRTY BACKPACKER");
+    v = v.replace(/\b(?:GRIZZLIES)\b/g, "DIRTY BACKPACKERS");
+    v = v.replace(/\b(?:Grizzlies)\b/g, "Dirty Backpackers");
     v = v.replace(/\b(?:grizzly)\b/g, "dirty backpacker");
     v = v.replace(/\b(?:grizzlies)|(?:grizzly bears)\b/g, "dirty backpackers");
     v = v.replace(/\bGrizzly bear\b/g, "Dirty backpacker");
     v = v.replace(/\bGrizzly bears\b/g, "Dirty backpackers");
+
 
 
     // Habitat
@@ -159,34 +163,11 @@ function replaceText(v)
     v = v.replace(/\bClimate change\b/g, "Finding a job");
     v = v.replace(/\bclimate change\b/g, "finding a job");
     
-    // Cohorts
-    v = v.replace(/\b(S|s)truggling (A|a)spirationals\b/g, "Struggling (with) Pythons");
-    v = v.replace(/\b(S|s)uccessful (H|h)omeowners\b/g, "Viper Stripers");
-    v = v.replace(/\b(A|a)ctive (A|a)ffluents\b/g, "Activated Boas");
-    v = v.replace(/\b(C|c)omfortable (?:tv|Tv|TV) (W|w)atchers\b/g, "Cozy Cobras");
+    //check repitition
+    v = v.replace(/\b(?:Backpacker Backpacker)\b/g, "Backpacker");
+    v = v.replace(/\b(?:BACKPACKER BACKPACKER)\b/g, "BACKPACKER");
+    v = v.replace(/\b(?:backpacker backpacker)\b/g, "backpacker");
 
-    // The Generation of €700
-    v = v.replace(
-        /\b(?:The Generation of €700)|(?:€700 Generation)\b/g,
-        "Ophion"
-    );
-    v = v.replace(
-        /\b(?:the generation of €700)|(?:€700 generation)\b/g,
-        "ophion"
-    );
-
-    // Mileurista
-    v = v.replace(/\b(?:M|m)ill?eurista\b/g, "Nagual");
-
-    // Precarious Generation
-    v = v.replace(
-        /\b(?:Precarious Generation)|(?:Generation Precarious)\b/g,
-        "Gargouille"
-    );
-    v = v.replace(
-        /\b(?:precarious generation)|(?:generation precarious)\b/g,
-        "gargouille"
-    );
 
     return v;
 }
