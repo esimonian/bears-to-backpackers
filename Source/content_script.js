@@ -21,193 +21,144 @@ function handleText(textNode) {
 
 function replaceText(v)
 {
-    // Fix some misspellings
-    v = v.replace(/\b(M|m)illienial(s)?\b/g, "$1illennial$2");
-    v = v.replace(/\b(M|m)illenial(s)?\b/g, "$1illennial$2");
-    v = v.replace(/\b(M|m)ilennial(s)?\b/g, "$1illennial$2");
-    v = v.replace(/\b(M|m)ilenial(s)?\b/g, "$1illennial$2");
 
-    // Millennial Generation
-    v = v.replace(
-        /\b(?:Millennial Generation)|(?:Generation Millennial)\b/g,
-        "Plissken Faction"
-    );
-    v = v.replace(
-        /\b(?:millennial generation)|(?:generation millennial)\b/g,
-        "Plissken faction"
-    );
+// Backpacer Species 
+    // Polar bear to trust fund baby 
+    v = v.replace(/\bPolar Bear\b/g, "Trust Fund Baby");
+    v = v.replace(/\bPolar bear\b/g, "Trust fund baby");
+    v = v.replace(/\bpolar bear\b/g, "trust fund baby");
+    v = v.replace(/\bPolar Bears\b/g, "Trust Fund Babies");
+    v = v.replace(/\bPolar bears\b/g, "Trust fund babies");
+    v = v.replace(/\bpolar bears\b/g, "trust fund babies");
 
-    // Millennialism
-    v = v.replace(/\bMillennialism\b/g, "Reptilianism");
-    v = v.replace(/\bmillennialism\b/g, "reptilianism");
+    //Grizzliessss
+    v = v.replace(/\b(?:Grizzly)\b/g, "Dirty Backpacker");
+    v = v.replace(/\b(?:Grizzlies)\b/g, "Dirty Backpackers");
+    v = v.replace(/\b(?:grizzly)\b/g, "dirty backpacker");
+    v = v.replace(/\b(?:grizzlies)|(?:grizzly bears)\b/g, "dirty backpackers");
+    v = v.replace(/\bGrizzly bear\b/g, "Dirty backpacker");
+    v = v.replace(/\bGrizzly bears\b/g, "Dirty backpackers");
 
-    //  Gendered Millennials
-    v = v.replace(/\bMillennial (M|m)(e|a)n('s)?\b/g, "Snake $1$2n$3");
-    v = v.replace(/\bmillennial m(e|a)n('s)?\b/g, "snake m$1n$2");
-    v = v.replace(/\bMillennial (B|b)oy('s|s(?:')?)?\b/g, "Snake $1oy$2");
-    v = v.replace(/\bmillennial boy('s|s(?:')?)?\b/g, "snake boy$1");
-    v = v.replace(/\bMillennial (G|g)uy('s|s(?:')?)?\b/g, "Snake $1uy$2");
-    v = v.replace(/\bmillennial guy('s|s(?:')?)?\b/g, "snake guy$1");
-    v = v.replace(/\bMillennial (W|w)om(e|a)n('s)?\b/g, "Snake $1om$2n$3");
-    v = v.replace(/\bmillennial wom(e|a)n('s)?\b/g, "snake wom$1n$2");
-    v = v.replace(/\bMillennial (G|g)irl('s|s(?:')?)?\b/g, "Snake $1irl$2");
-    v = v.replace(/\bmillennial girl('s|s(?:')?)?\b/g, "snake girl$1");
-    v = v.replace(/\bMillennial (G|g)al('s|s(?:')?)?\b/g, "Snake $1al$2");
-    v = v.replace(/\bmillennial gal('s|s(?:')?)?\b/g, "snake gal$1");
 
-    //  Aged Millennials
-    v = v.replace(/\bMillennial Child('s)?\b/g, "Snakelet$1");
-    v = v.replace(/\b[Mm]illennial child('s)?\b/g, "snakelet$1");
-    v = v.replace(/\bMillennial Children(?:(')s)?\b/g, "Snakelets$1");
-    v = v.replace(/\b[Mm]illennial children(?:(')s)?\b/g, "snakelets$1");
+    // Habitat
+    v = v.replace(/\b(?:Den)|(?:Cave)\b/g, "Hostel");
+    v = v.replace(/\b(?:Dens)|(?:Caves)\b/g, "Hostels");
+    v = v.replace(/\b(?:den)|(?:cave)\b/g, "hostel");
+    v = v.replace(/\b(?:dens)|(?:caves)\b/g, "hostels");
+    // Growl
     v = v.replace(
-        /\bMillennial [Tt]een(?:ager)?('s)?\b/g,
-        "proto-Snake Person$1"
+        /\b(?:Bear)\b/g,
+        "Backpacker"
     );
-    v = v.replace(/\bmillennial teen(?:ager)?('s)?\b/g, "proto-snake person$1");
+    v = v.replace(/\b(?:BEAR)\b/g, "BACKPACKER");
+    v = v.replace(/\b(?:BEARS)\b/g, "BACKPACKERS");
     v = v.replace(
-        /\bMillennial [Tt]een(?:ager)?(?:(s)\b(')|s\b)/g,
-        "proto-Snake People$2$1"
-    );
-    v = v.replace(
-        /\bmillennial teen(?:ager)?(?:(s)\b(')|s\b)/g,
-        "proto-snake people$2$1"
-    );
-    v = v.replace(/\bMillennial (A|a)dult('s)?\b/g, "$1dult Snake Person$2");
-    v = v.replace(/\bmillennial adult('s)?\b/g, "adult snake person$1");
-    v = v.replace(
-        /\bMillennial (A|a)dult(?:(s)\b(')|s\b)/g,
-        "$1dult Snake People$3$2"
-    );
-    v = v.replace(
-        /\bmillennial adult(?:(s)\b(')|s\b)/g,
-        "adult snake people$2$1"
+        /\b(?:Bears)\b/g,
+        "Backpackers"
     );
 
-    // Definition
-    v = v.replace(/\bmil·len·nial\b/g, "snake peo·ple");
-    v = v.replace(/\bmiˈlenēəl\b/g, "snāk ˈpēpəl");
-
-    // Millennial
-    v = v.replace(/\bMillennial\b/g, "Snake Person");
-    v = v.replace(/\bmillennial\b/g, "snake person");
-    v = v.replace(/\bMillennial(?:(s)\b(')|s\b)/g, "Snake People$2$1");
-    v = v.replace(/\bmillennial(?:(s)\b(')|s\b)/g, "snake people$2$1");
-
-    // The Great Recession
-    v = v.replace(/\bGreat Recession\b/g, "Time of Shedding and Cold Rocks");
-    v = v.replace(/\bgreat recession\b/g, "time of shedding and cold rocks");
-
-    // The Great Depression
-    v = v.replace(/\bGreat Depression\b/g, "Clutch Plague");
-    v = v.replace(/\bgreat depression\b/g, "clutch plague");
-
-    // Occupy Wall Street
     v = v.replace(
-        /\b(?:(?:Occupy|OWS) (?:M|m)ovement)|(?:Occupy Wall Street)\b/g,
-        "Great Ape-Snake War"
+        /\b(?:bear)\b/g,
+        "backpacker"
     );
     v = v.replace(
-        /\b(?:(?:occupy|OWS|ows) movement)|(?:occupy wall street)\b/g,
-        "great ape-snake war"
-    );
-    v = v.replace(/\bOWS\b/g, "GA-SW");
-    v = v.replace(/\bows\b/g, "ga-sw");
-
-    // Helicopter Parents
-    v = v.replace(/\bHelicopter Parent(?:(s)\b(')|s\b)/g, "Thulsa Doom$2$1");
-    v = v.replace(/\b[Hh]elicopter parent(?:(s)\b(')|s\b)/g, "Thoth-Amon$2$1");
-
-    // Trophy Kids
-    v = v.replace(/\bTrophy Kid(?:(s)\b(')|s\b)/g, "Quetzalcoatl's Chosen$2$1");
-    v = v.replace(/\btrophy kid(?:(s)\b(')|s\b)/g, "Quetzalcoatl's chosen$2$1");
-
-    // Digital Natives
-    v = v.replace(/\bDigital Native(s)?\b/g, "Parseltongue$1");
-    v = v.replace(/\bdigital native(s)?\b/g, "parseltongue$1");
-
-    // Generation Z
-    v = v.replace(/\bGeneration Z\b/g, "The Zolom's Children");
-    v = v.replace(/\bgeneration Z\b/g, "the Zolom's children");
-    v = v.replace(/\bZ Generation\b/g, "Children of the Zolom");
-    v = v.replace(/\bz generation\b/g, "children of the Zolom");
-
-    // tweens
-    v = v.replace(/\bTween(s)?\b/g, "Neonate$1");
-    v = v.replace(/\btween(s)?\b/g, "neonate$1");
-
-    // Generation Y
-    v = v.replace(/\b(?:Generation Y)|(?:Generation Why)\b/g,
-        "Serpent Society");
-    v = v.replace(/\bgen(?:eration)? ?(?:wh)?y\b/g, "serpent society");
-    v = v.replace(/\bGen Y\b/g, "Society of the Serpent");
-
-    // Generation We
-    v = v.replace(/\bGeneration We\b/g, "Caduceus Cult");
-    v = v.replace(/\bgeneration we\b/g, "caduceus cult");
-    v = v.replace(/\bWe Generation\b/g, "Cult of the Caduceus");
-    v = v.replace(/\bwe generation\b/g, "cult of the caduceus");
-
-    // Generation Me
-    v = v.replace(/\bGeneration Me\b/g, "The Cult of the Serpent");
-    v = v.replace(/\bgeneration me\b/g, "the cult of the serpent");
-
-    // Global Generation
-    v = v.replace(/\bGlobal Generation\b/g, "Tannin's Horde");
-    v = v.replace(/\bglobal generation\b/g, "Tannin's horde");
-    v = v.replace(/\bGeneration Global\b/g, "Horde of Tannin");
-    v = v.replace(/\bgeneration global\b/g, "horde of Tannin");
-
-    // Generation Next
-    v = v.replace(/\bGeneration Next\b/g, "Time of Nidhogg");
-    v = v.replace(/\bgeneration next\b/g, "time of Nidhogg");
-
-    // Net Generation
-    v = v.replace(/\bNet Generation\b/g, "Damballa's Coils");
-    v = v.replace(/\bnet generation\b/g, "Damballa's coils");
-    v = v.replace(/\bGeneration Net\b/g, "Coils of Damballa");
-    v = v.replace(/\bgeneration net\b/g, "Coils of Damballa");
-
-    // Echo Boomers
-    v = v.replace(/\bEcho Boomers\b/g, "Crotalids");
-    v = v.replace(/\becho Boomers\b/g, "crotalids");
-
-    // New Boomers
-    v = v.replace(/\bNew Boomer(?:(s)\b(')|s\b)/g, "Jörmungandr's Circle$2$1");
-    v = v.replace(/\bnew Boomer(?:(s)\b(')|s\b)/g, "Jörmungandr's circle$2$1");
-
-    // Generation Flux
-    v = v.replace(/\b(?:Generation Flux)|(?:Flux Generation)\b/g, "Hiss Club");
-    v = v.replace(/\b(?:generation flux)|(?:flux generation)\b/g, "hiss club");
-
-    // Generation Sell
-    v = v.replace(/\bGeneration Sell\b/g, "Kaa Tribe");
-    v = v.replace(/\bgeneration sell\b/g, "Kaa tribe");
-    v = v.replace(/\bSell Generation\b/g, "Tribe of Kaa");
-    v = v.replace(/\bsell generation\b/g, "tribe of Kaa");
-
-    // Boomerang Generation
-    v = v.replace(
-        /\b(?:Boomerang Generation)|(?:Generation Boomerang)\b/g,
-        "Ouroboros Society"
+        /\b(?:bears)\b/g,
+        "backpackers"
     );
     v = v.replace(
-        /\b(?:boomerang generation)|(?:generation boomerang)\b/g,
-        "ouroboros society"
+        /\b(?:hibernation)|(?:hibernating)\b/g,
+        "finding yourself"
+    );
+    v = v.replace(/\b(?:Hibernation)|(?:Hibernating)\b/g, "Finding Yourself");
+    v = v.replace(
+        /\b(?:hibernate)\b/g,
+        "go find themself"
+    );
+    v = v.replace(/\b(?:cub)\b/g, "Go Pro");
+    v = v.replace(/\b(?:Cub)\b/g, "Go Pro");
+    v = v.replace(/\b(?:Cubs)\b/g, "Go Pros");
+    v = v.replace(/\b(?:cubs)\b/g, "Go Pros");
+    // change young to go pro if bear in sentence 
+
+    v = v.replace(
+        /\b(?:Backpacker Spray)\b/g,
+        "Deodorant"
+    );
+    v = v.replace(
+        /\b(?:Backpacker spray)\b/g,
+        "Deodorant"
+    );
+    v = v.replace(
+        /\b(?:backpacker spray)\b/g,
+        "deodorant"
     );
 
-    // Peter Pan Generation
-    v = v.replace(/\bPeter Pan Generation\b/g, "Neheb-Kau Cult");
-    v = v.replace(/\b(?:P|p)eter (?:P|p)an generation\b/g, "Neheb-Kau cult");
-    v = v.replace(/\bGeneration Peter Pan\b/g, "Cult of Neheb-Kau");
-    v = v.replace(/\bgeneration (?:P|p)eter (?:P|p)an\b/g, "cult of Neheb-Kau");
+    v = v.replace(
+        /\b(?:backpacker sprays)\b/g,
+        "deodorant"
+    );
 
-    // Generation 911
-    v = v.replace(/\bGen(?:eration)? 9\/?11\b/g, "Kaa Tribe");
-    v = v.replace(/\bgen(?:eration)? 9\/?11\b/g, "Kaa tribe");
-    v = v.replace(/\b9\/?11 Generation\b/g, "Tribe of the Kaa");
-    v = v.replace(/\b9\/?11 generation\b/g, "tribe of the Kaa");
+// honey
+    v = v.replace(
+        /\b(?:Honey)\b/g,
+        "Free beer"
+    );
 
+    v = v.replace(
+        /\b(?:Eat honey)\b/g,
+        "Drink free beer"
+    );
+
+     v = v.replace(
+        /\b(?:Eat Honey)\b/g,
+        "Drink Free Beer"
+    )
+    v = v.replace(
+        /\b(?:eat honey)\b/g,
+        "drink free beer"
+    );
+    v = v.replace(
+        /\b(?:honey)\b/g,
+        "free beer"
+    );
+    v = v.replace(
+        /\b(?:beehive)\b/g,
+        "keg"
+    );
+    v = v.replace(
+        /\b(?:beehives)\b/g,
+        "kegs"
+    );
+    v = v.replace(
+        /\b(?:Beehive)\b/g,
+        "Keg"
+    );
+    v = v.replace(/\b(?:Beehives)\b/g, "Kegs");
+    v = v.replace(/\b(?:hives)\b/g, "kegs");
+    v = v.replace(/\b(?:Hives)\b/g, "Kegs");
+    //beekeeping
+    v = v.replace(/\bbeekeeping\b/g, "Brewing");
+    v = v.replace(/\bBeekeeping\b/g, "brewing");
+    v = v.replace(/\bBeekeepers\b/g, "Brewers");
+    v = v.replace(/\bbeekeepers\b/g, "brewers");
+    v = v.replace(/\bBeekeeper\b/g, "Brewer");
+    v = v.replace(/\bbeekeeper\b/g, "brewer");
+
+    // Grizlly bear to dirty backpacer
+
+    
+    // Global 
+    v = v.replace(/\bGlobal warming\b/g, "Getting a job");
+    v = v.replace(/\bGlobal Warming\b/g, "Getting a Job");
+    v = v.replace(/\bglobal warming\b/g, "getting a job");
+    v = v.replace(/\bClimate warming\b/g, "Getting a job");
+    v = v.replace(/\bClimate Warming\b/g, "Getting a Job");
+    v = v.replace(/\bclimate warming\b/g, "getting a job");
+
+    v = v.replace(/\bClimate Change\b/g, "Finding a Job");
+    v = v.replace(/\bClimate change\b/g, "Finding a job");
+    v = v.replace(/\bclimate change\b/g, "finding a job");
+    
     // Cohorts
     v = v.replace(/\b(S|s)truggling (A|a)spirationals\b/g, "Struggling (with) Pythons");
     v = v.replace(/\b(S|s)uccessful (H|h)omeowners\b/g, "Viper Stripers");
